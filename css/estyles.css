@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=work+Sans:width@100;300;400;600;800&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*Menu*/
+.container-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.container-header header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.container-header header ul {
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.container-header header nav ul li a:hover {
+    color: #1CB698;
+}
+.nav-responsive {
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/*EXPERIENCIA*/
+.experiencia {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.experiencia .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    text-align: justify;
+}
+.experiencia h2 {
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 28px 0;
+}
+.experiencia .contenido-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.experiencia .contenido-seccion p span {
+    color: #1CB698;
+    font-weight: bold;
+}
+.experiencia .fila {
+    display: flex;
+}
+.experiencia .fila .columna {
+    width: 50%;
+}
+.experiencia .fila .columna h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.experiencia .fila .columna ul {
+    list-style: none;
+}
+.experiencia .fila .columna ul li {
+    margin: 12px 0;
+}
+.experiencia .fila .columna li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+.experiencia .fila .columna ul li span {
+    background-color: #1CB698;
+}.experiencia .fila .columna .contenido-intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+.experiencia .fila .columna .contenido-intereses .intereses {
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 50px;
+    margin: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.experiencia .fila .columna .contenido-intereses .intereses:hover {
+    background-color: #1CB698;
+}
+.experiencia .fila .columna .contenido-intereses .intereses i {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+/*HABILIDADES*/
+.habilidades {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.habilidades .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2 {
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 28px 0;
+}
+.habilidades .fila {
+    display: flex;
+}
+.habilidades .fila .columna {
+    width: 50%;
+    padding: 0 20px;
+}
+.habilidades .fila .columna h3 {
+    font-size: 20px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.habilidades .habilidad > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.habilidades .habilidad .barra-habilidad {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.habilidades .habilidad .progreso {
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.habilidades .habilidad .barra-habilidad span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.habilidades .habilidad .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 70%;}
+
+}
+
+.habilidades .habilidad .htmlcss {
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 75%;}
+
+}
+
+.habilidades .habilidad .python {
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python {
+    0%{width: 0%}
+    100%{width: 50%;}
+}
+
+.habilidades .habilidad .excel {
+    width: 0%;
+    animation: 2s excel forwards;
+}
+@keyframes excel {
+    0%{width: 0%}
+    100%{width: 60%;}
+}
+.habilidades .habilidad .expreOral {
+    width: 0%;
+    animation: 2s expreOral forwards;
+}
+@keyframes expreOral {
+    0%{width: 0%}
+    100%{width: 50%;}
+}
+.habilidades .habilidad .lenguaje {
+    width: 0%;
+    animation: 2s lenguaje forwards;
+}
+@keyframes lenguaje {
+    0%{width: 0%}
+    100%{width: 55%;}
+}
+.habilidades .habilidad .escritura {
+    width: 0%;
+    animation: 2s escritura forwards;
+}
+@keyframes escritura {
+    0%{width: 0%}
+    100%{width: 60%;}
+}
+.habilidades .habilidad .libros {
+    width: 0%;
+    animation: 2s libros forwards;
+}
+@keyframes libros {
+    0%{width: 0%}
+    100%{width: 80%;}
+}
+
+
+
+
+
+
+
+
